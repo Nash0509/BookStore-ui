@@ -14,7 +14,7 @@ const EditBooks = () => {
     const { enqueueSnackbar } = useSnackbar();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/books/${id}`)
+        fetch(`https://bookstore-api-rpvm.onrender.com/books/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setTitle(data.title);
